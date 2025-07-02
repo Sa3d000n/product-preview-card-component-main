@@ -9,7 +9,7 @@ body {
 }
 
 .card {
-  max-width: 600px;
+  max-width: 43rem;
   width: 90%;
 }
 
@@ -22,9 +22,9 @@ img {
 }
 
 /* Change Image for Small Screens */
-@media (max-width: 640px) {
+@media (max-width: 46rem) {
   .card {
-    max-width: 350px;
+    max-width: 22rem;
   }
 }
 
@@ -73,6 +73,14 @@ h1 {
   background-color: hsl(158, 36%, 37%);
   transition: background 0.3s ease;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .button {
+  
+  transition: background 0.3s none;
+}
+}
+
 
 .button:hover {
   background-color: hsl(158, 42%, 18%);
