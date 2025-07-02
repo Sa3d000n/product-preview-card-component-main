@@ -77,7 +77,7 @@ h1 {
 @media (prefers-reduced-motion: reduce) {
   .button {
   
-  transition: background none;
+  transition:  none;
 }
 }
 
