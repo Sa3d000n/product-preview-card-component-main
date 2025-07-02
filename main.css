@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  height: 1000px;
+  font-family: "Montserrat", sans-serif;
+  background-color: hsl(30, 38%, 92%);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.card {
+  max-width: 600px;
+  width: 90%;
+}
+
+/* Image Styling */
+img{
+  max-inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Change Image for Small Screens */
+@media (max-width: 640px) {
+  .card {
+    max-width: 350px;
+  }
+}
+
+/* Typography */
+.title {
+  color: hsl(228, 12%, 48%);
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-weight: 500;
+  font-size: 10px;
+}
+
+h1 {
+  font-weight: 700;
+  font-family: "Fraunces", serif;
+  font-size: 40px;
+  line-height: 1.1; /* Improved readability */
+}
+
+.para {
+  color: hsl(228, 12%, 48%);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Price Styling */
+.price {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-family: "Fraunces", serif;
+  font-size: 35px;
+  font-weight: 700;
+  color: hsl(158, 36%, 37%);
+}
+
+.price span {
+  text-decoration: line-through;
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+  font-weight: 500;
+}
+
+/* Button Styling */
+.button {
+  background-color: hsl(158, 36%, 37%);
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background-color: hsl(158, 42%, 18%);
+}
